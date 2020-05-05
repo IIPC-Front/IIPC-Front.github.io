@@ -170,8 +170,8 @@ header {
     width: 100vw;
     z-index: 997;
     margin: 0;
-    padding: 0 20px;
-    background-color: #fff;
+
+    background-color: #dcdcdc;
 }
 
 
@@ -314,27 +314,20 @@ header {
 /* ------------------------------------------------------ */
 
 .gallery {
-    margin-top: auto;
-
+    top: 120px;
+    background: #fff;
+    height: 50vh;
+    border-top: #ddd 1px solid;
 }
 
 .gallery-cell {
-    width: 66%;
+    height: 90%;
+    width: auto;
+    background: #fff;
+    counter-increment: gallery-cell;
+    box-shadow: 0 2px 2px #000;
+    border-radius: 1rem;
 }
-
-.gallery-cell img {
-    width: 100%;
-}
-
-
-.gallery-cell.is-selected {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: none;
-            filter: none;
-  }
-
 
 /* ------------------------------------------------------ */
 /*                       Second set                       */
