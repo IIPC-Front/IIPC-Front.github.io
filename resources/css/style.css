@@ -251,19 +251,42 @@ header {
 .main-nav li:hover .dropdown {display: block;}
 
 /* Mobile navi */
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
+ /* Style the navigation menu */
+ .topnav {
     display: none;
-}
-
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: #fff;
-}
-
-
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    float: right;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    color: white;
+  } 
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -291,29 +314,15 @@ header {
 /* ------------------------------------------------------ */
 
 .gallery {
-    top: 110px;
-    background: #89906f;
-    height: 700px;
+    margin-top: auto;
+
 }
 
 .gallery-cell {
-    width: 50%;
-    height: 90%;
-    margin-top: 2.5%;
-    background: #eee;
-    counter-increment: gallery-cell;
-    box-shadow: 0 2px 2px #000;
-    opacity: 0.7;
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-            transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+    width: 66%;
 }
 
 .gallery-cell img {
-    height: 100%;
     width: 100%;
 }
 
