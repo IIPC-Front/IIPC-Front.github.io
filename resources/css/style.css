@@ -108,20 +108,13 @@ h2:after {
 
 a:link,
 a:visited {
-    color: #777d60;
+    color: #000;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #777d60;
-    -webkit-transition: border-bottom 0.3s, color 0.3s;
-    transition: border-bottom 0.3s, color 0.3s;
 }
 
-a:hover,
-a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
-}
 
+  
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
@@ -154,17 +147,17 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #999f82;
+    background-color: #4a54c9;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #999f82;
+    border: 1px solid #4a54c9;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #999f82;
+    border: 1px solid #4a54c9;
     color: #fff;
 }
 
@@ -199,6 +192,7 @@ header {
 
 /* Main navi */
 .main-nav {
+    
     top: 0;
     right: 0;
     height: 100%;
@@ -215,45 +209,46 @@ header {
     font-size: 20px;
 }
 
-.dropbtn {
-    background-color: transparent;
-    color: #000;
-    padding: 16px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
+.main-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav li:hover {
+    color: #4a54c9;
+    transform: scale(1);
+}
+
+/* ---------------------- Dropdown ---------------------- */
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
+.dropdown {
+    font-weight: 300;
+    font-size: 12px;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
+    background-blend-mode: hard-light;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
-  .dropdown-content a {
+
+.dropdown li {
+    margin-left: 0;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #a2a79188;
-  }
+}
+
+.dropdown a {
+    text-transform: capitalize;
+}
+
+.dropdown li:hover {
+    background-color: #d3d3d3;
+}
+
+.main-nav li:hover .dropdown {display: block;}
 
 /* Mobile navi */
 .mobile-nav-icon {
@@ -304,8 +299,7 @@ header {
 .gallery-cell {
     width: 50%;
     height: 90%;
-    margin-top: 2%;
-    margin-right: 10px;
+    margin-top: 2.5%;
     background: #eee;
     counter-increment: gallery-cell;
     box-shadow: 0 2px 2px #000;
