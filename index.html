@@ -22,6 +22,9 @@
     </head>
 
     <body>
+      <div id="loading">
+        <img id="loading-image" src="resources/img/200w.webp" alt="Loading..." />
+      </div>
         <header>
             <nav>
                 <img src="resources/img/logo.jpg" alt="IIPC logo" class="logo">
@@ -92,8 +95,9 @@
         <div class="gallery js-flickity"
         data-flickity-options='{ 
             "wrapAround": true, 
-            "autoPlay": 5000
-                
+            "autoPlay": 5000,
+            "imagesLoaded": true,
+            "lazyLoad": 2
         }'>
             <img class="gallery-cell" src="resources/img/img1.jpg">
             <img class="gallery-cell" src="resources/img/img2.jpg">
@@ -105,6 +109,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="vendors/js/flickity.pkgd.min.js"></script>
         <script src="resources/js/script.js"></script>
+        <script>
+          $(window).load(function() {
+            $('#loading').hide();
+          });
+        </script>
     </body>
 
 </html>

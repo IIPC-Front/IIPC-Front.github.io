@@ -1,6 +1,6 @@
 $('.main-gallery').flickity({
     // options
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: true
   });
 
