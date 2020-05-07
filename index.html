@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="IIPC Description goes here">
+        <meta name="description" content="Industry Institute Partnership Cell, Kalyani Government Engineering College">
 
         <link rel="stylesheet" href="vendors/css/flickity.css" media="screen">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -14,11 +14,11 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="resources/fonts/stylesheet.css">
 
-        <title>KGEC | IIPC</title>
+        <title>IIPC KGEC - Home</title>
 
     </head>
 
@@ -27,11 +27,12 @@
         <img id="loading-image" src="resources/img/200w.webp" alt="Loading..." />
       </div>
         <header>
+          
             <nav>
-                <img src="resources/img/logo.jpg" alt="IIPC logo" class="logo">
-                <img src="resources/img/logo.jpg" alt="IIPC logo" class="logo-black">
+              <img src="resources/img/logo.jpg" alt="IIPC logo" class="logo">
+                <div class="head">Industry Institute Placement Cell, KGEC</div>
                 <ul class="main-nav">
-                    <li><a href="">Home</a>
+                    <li><a id="focusme" href="/">Home</a>
                         <ul class="dropdown">
                             <a href=""><li>Objectives</li></a>
                             <a href=""><li>Activities</li></a>
@@ -47,7 +48,7 @@
                       </ul>			
                     </li>
                     <li>
-                        <a href="">Activity</a>
+                        <a href="resources/pages/activity.html">Activity</a>
                         <ul class="dropdown">
                           <a href=""><li>Internship</li></a>
                           <a href=""><li>Seminar</li></a>
@@ -57,14 +58,14 @@
                         </ul>			
                       </li>
                       <li>
-                        <a href="">MOU</a>
+                        <a href="resources/pages/mou.html">MOU</a>
                         <ul class="dropdown">
                           <a href=""><li>Academics</li></a>
                           <a href=""><li>Industry</li></a>
                         </ul>			
                       </li>
                       <li>
-                        <a href="">Industrial Visit</a>
+                        <a href="resources/pages/industrial-visits.html">Industrial Visit</a>
                         <ul class="dropdown">
                           <a href=""><li>Inhouse</li></a>
                           <a href=""><li>Inplant</li></a>
@@ -72,67 +73,63 @@
                           <a href=""><li>Industrial Programme</li></a>
                         </ul>			
                       </li>
-                       <li><a href="">Downloads</a></li>
+                       <li><a href="resources/pages/downloads.html">Downloads</a></li>
                     </ul>
-                    <!-- Top Navigation Menu -->
-                    <div class="topnav">
-                        <a href="#home" class="active"></a>
-                        <!-- Navigation links (hidden by default) -->
-                        <div id="myLinks">
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
-                        </div>
-                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                        </a>
+                     <!-- The overlay -->
+                    <div id="myNav" class="overlay">
+
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Clients</a>
+                      <a href="#">Contact</a>
                     </div>
+
+                  </div>
+
+                  <!-- Use any element to open/show the overlay navigation menu -->
+                  <span onclick="openNav()">
+                    <a href="javascript:void(0);" class="icon">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                    </span> 
+
             </nav>                        
         </header>
-        
-        <!-- Flickity HTML init -->
-        <!-- add "autoPlay": 5000 -->
-        <div class="gallery js-flickity"
+        <div class="header-overlay">Industry Institute<br>Placement Cell - KGEC</div>
+
+        <div class="row entry">
+        <div class="gallery js-flickity col span-2-of-2"
         data-flickity-options='{ 
             "wrapAround": true, 
             "autoPlay": 5000,
             "imagesLoaded": true,
-            "lazyLoad": 2
+            "lazyLoad": 2,
+            "pageDots": false
         }'>
             <img class="gallery-cell" src="resources/img/img1.jpg">
             <img class="gallery-cell" src="resources/img/img2.jpg">
             <img class="gallery-cell" src="resources/img/img3.jpg">
             <img class="gallery-cell" src="resources/img/img4.jpg">
-            <img class="gallery-cell" src="resources/img/img5.jpg">
         </div>
+      </div>
 
-        <div class="row board">
-          
-          <div class="col span-2-of-3">
-           
-          </div>
+      <div class="row tagline">
+        <div class="col span-2-of-2 hero-text">
+          <h2>❝ Lorem Ipsum Dolor sit amet consectuer ❞</h2>
+        </div>      
+      </div>
 
-          <div class="col span-1-of-3">
-
-              <div class="notice-text"><h3><ion-icon name="clipboard-outline"></ion-icon>Notice Board</h3></div>
-
-              <div class="card">
-
-              </div>
-              <div class="card">
-                  
-              </div>
-              <div class="card">
-                  
-              </div>
-              <div class="card">
-                  
-              </div>
-          </div>
-
+      <div class="mid">
+        <div class="col span-3-of-3">          
         </div>
+      </div>
 
+        
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="vendors/js/flickity.pkgd.min.js"></script>

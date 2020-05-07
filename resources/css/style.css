@@ -37,9 +37,9 @@
 
 html,
 body {
-    background-color: #fff;
-    color: rgb(85, 85, 85);
-    font-family: 'Titillium Web', sans-serif;
+    background-color: #faf8f2;
+    color: #000;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -52,6 +52,7 @@ body {
 /* ----------------------------------------------- */
 
 .row {
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -66,11 +67,75 @@ h3 {
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
+    color: #000;
+    font-size: 300%;
     word-spacing: 4px;
     letter-spacing: 1px;
+    font-weight: 500;
+    padding: 0 30px;
 }
+
+.cap {
+    font-size: 78%;
+    font-weight: 800;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+    
+    color: blue;
+    }
+    
+    10% {
+    
+    color: #8e44ad;
+    }
+    
+    20% {
+    
+    color: #1abc9c;
+    }
+    
+    30% {
+    
+    color: #d35400;
+    }
+    
+    40% {
+    
+    color: blue;
+    }
+    
+    50% {
+    
+    color: #34495e;
+    }
+    
+    60% {
+    
+    color: blue;
+    }
+    
+    70% {
+    
+    color: #2980b9;
+    }
+    80% {
+    
+    color: #f1c40f;
+    }
+    
+    90% {
+    
+    color: #2980b9;
+    }
+    
+    100% {
+    
+    color: pink;
+    }
+}
+
 
 h2 {
     font-size: 180%;
@@ -112,57 +177,149 @@ a:visited {
 header {
     position: fixed;
     width: 100vw;
-    z-index: 997;
+    z-index: 2;
     margin: 0;
-    height: 80px;
-    background-color: #dcdcdc;
+    height: 86px;
+    background-color: #343a40;
 }
 
+.header-overlay {
+    position: absolute;
+    width: calc(100vw - 150px);
+    z-index: 1;
+    margin: 0 75px;
+    height: 86px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding-top: 17.5px;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 .logo {
-    height: 75px;
-    width: auto;
-    float: left;
-    margin: 2px;
-    padding: 2px;
+    height: 3rem;
+    width: 3rem;
+    margin: 12px;
+    padding: auto;
     border-radius: 50%;
-}
-
-.logo-black { 
-    display: none;
-    height: 50px;
-    width: auto;
     float: left;
-    margin: 5px 0;
 }
 
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    float: left;
+    right: 0;
+}
+
+.head {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    height: 100%;
+    width: auto;
+    margin: 30px;
+    line-height: 100%;
+    color: #f4ffff;
+}
 /* Main navi */
-.main-nav {
-    
+.main-nav {    
     top: 0;
     right: 0;
     height: 100%;
-    padding: 0 20px;
-    display: block;
-    float: right;
+    width: auto;
+    margin: 30px;
     list-style: none;
-    margin-top: 25px;   
+    float: right;
 }
 
 .main-nav li {
     display: inline-block;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .main-nav a {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.main-nav li:hover {
-    color: #1A0000;
+.main-nav li a:hover {
+    color: rgba(255, 255, 255, 0.7);
     transform: scale(1);
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 4; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px; 
+}
+  
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+} 
+
+i {
+    color: #fff;
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 12px 0;
+    display: none;
 }
 
 /* ---------------------- Dropdown ---------------------- */
@@ -171,10 +328,18 @@ header {
     font-weight: 300;
     display: none;
     position: fixed;
-    background-color: #f1f1f1;
-    background-blend-mode: hard-light;
-    min-width: 160px;
     z-index: 1;
+    min-width: 8rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 16px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
   }
 
 .dropdown li {
@@ -191,74 +356,65 @@ header {
 }
 
 .dropdown li:hover {
-    background-color: #d3d3d3;
+    background-color: rgba(105,105,105,0.1);
     color: #000;
 }
 
 .main-nav li:hover .dropdown {display: block;}
 
-/* Mobile navi */
- /* Style the navigation menu */
- .topnav {
-    display: none;
-    overflow: hidden;
-    background-color: transparent;
-    position: relative;
-    float: right;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: #1A0000;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: transparent;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    color: white;
-  } 
 
-  #myLinks a {
-      background-color: #fcfcfc;
-  }
-
-  #myLinks a:hover {
-    background-color: #ccc;
+#focusme {
+    color: #fff;
 }
 
 /* ------------------------------------------------------ */
 /*                        Carousel                        */
 /* ------------------------------------------------------ */
 
+.entry {
+    background-color: #faf8f2;
+    margin-top: 100px;
+    position: relative;
+    height: 350px;
+}
+
+.hero-text {
+    padding: 30px;
+    text-align: center;
+}
+
+.tagline {
+    position: relative;
+    height: 200px;
+}
+
+.kgec {
+    color:#313131;
+    -webkit-animation:colorchange 10s infinite alternate;
+}
+
 .gallery {
-    top: 80px;
-    background: #fff;
+    top: 0;
     height: 50vh;
 }
 
 .gallery-cell {
-    height: 90%;
+    height: 100%;
+    margin: 0 15px;
     width: auto;
-    background: #fff;
     counter-increment: gallery-cell;
-    box-shadow: 0 2px 2px #1A0000;
+}
+
+.tagline .gallery {
+    margin: 20px;
+    position: absolute;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.tagline .gallery-cell {
+    margin:0 120px;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
 }
 
 .flickity-page-dots { bottom: 30px; }
@@ -267,44 +423,18 @@ header {
 /*                       Second set                       */
 /* ------------------------------------------------------ */
 
-.board {
+.mid {
     position: relative;
-    margin-top: 6rem;
-    height: 600px;
-    padding: 0 20px;
+    width: 90vw;
+    right: 0;
+    margin-top: 50px;
+    margin-left: auto;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
+    border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
-.col    {
-    height: 100%;
-    padding: 20px;
-    background-color: #fafbfa;
-}
-
-.notice-text {
-    text-align: center;
-    margin-bottom: 5%;
-    color: #3964f9
-}
-
-.card {
-    height: 20%;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  
-  .card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-
-  ion-icon {
-    position: relative;
-    /* Adjust these values accordingly */
-    top: 3px;
-    right: 5px;
-  }
-  
 /* ----------------------------------------------- */
 /*                      Animations                 */
 /* ----------------------------------------------- */
