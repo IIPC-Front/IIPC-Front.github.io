@@ -18,4 +18,5 @@ For all other pages, it'd be better to have a separate css file than style.css s
 - Browse to localhost on your browser or 127.0.0.1
 
 Thanks
+
 Ayush
