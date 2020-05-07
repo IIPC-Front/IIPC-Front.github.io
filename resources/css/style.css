@@ -39,7 +39,7 @@ html,
 body {
     background-color: #fff;
     color: rgb(85, 85, 85);
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -47,30 +47,12 @@ body {
     height: 100%;
 }
 
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
-
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
 .row {
     margin: 0 auto;
-}
-
-section {
-    padding: 80px 0;
-}
-
-.box {
-    padding: 1%;
 }
 
 /* ----- HEADINGS ----- */
@@ -113,18 +95,6 @@ h2:after {
     margin-top: 30px;
 }
 
-/* ----- PARAGRAPHS ----- */
-.long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-}
-
-.box p {
-    font-size: 90%;
-    line-height: 145%;
-}
-
 /* ----- LINKS ----- */
 
 a:link,
@@ -134,53 +104,6 @@ a:visited {
     padding-bottom: 1px;
 }
 
-
-  
-/* ----- BUTTONS ----- */
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
-    transition: background-color 0.3s, border 0.3s, color 0.3s;
-}
-
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #777d60;
-    border: 1px solid #777d60;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #777d60;
-    color: #777d60;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #dcdcdc;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #dcdcdc;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #dcdcdc;
-    color: #fff;
-}
 
 /* ------------------------------------------------------ */
 /*                         HEADERS                        */
@@ -354,12 +277,13 @@ header {
 .col    {
     height: 100%;
     padding: 20px;
-    background-color: #eff0ec;
+    background-color: #fafbfa;
 }
 
 .notice-text {
     text-align: center;
     margin-bottom: 5%;
+    color: #3964f9
 }
 
 .card {
@@ -384,23 +308,3 @@ header {
 /* ----------------------------------------------- */
 /*                      Animations                 */
 /* ----------------------------------------------- */
-
-.js--wp-1,
-.js--wp-2,
-.js--wp-3
-{
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
-    opacity: 1;
-}
