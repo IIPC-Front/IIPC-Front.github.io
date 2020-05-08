@@ -225,33 +225,53 @@ nav {
 
 .overlay-content {
     position: relative;
-    top: 25%; 
-    width: 100%;
-    text-align: center; 
+    top: 10%; 
+    left: 10%;
+    width: 80%;
     margin-top: 30px; 
+    text-align: center;
 }
-  
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 18px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.lnk1 {
+    float: left;
+}
+
+.lnk2 {
+    float: right;
+}
+.lnk3 {
+    display: inline-block;
+}
+.overlay a li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 5px;
+}
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #ccc;
 }
 
 
 .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 25px;
     font-size: 60px;
+}
+
+.lnk-head {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    text-transform: capitalize;
 }
 
 
