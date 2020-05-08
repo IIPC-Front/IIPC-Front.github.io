@@ -71,6 +71,10 @@
     .act .col p {
         padding-right: 4%;
     }
+
+    .act .gallery {
+        height: 30vh;
+    }
     
     .row {
         height: auto;
