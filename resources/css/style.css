@@ -80,63 +80,6 @@ h1 {
     font-weight: 800;
 }
 
-@-webkit-keyframes colorchange {
-    0% {
-    
-    color: blue;
-    }
-    
-    10% {
-    
-    color: #8e44ad;
-    }
-    
-    20% {
-    
-    color: #1abc9c;
-    }
-    
-    30% {
-    
-    color: #d35400;
-    }
-    
-    40% {
-    
-    color: blue;
-    }
-    
-    50% {
-    
-    color: #34495e;
-    }
-    
-    60% {
-    
-    color: blue;
-    }
-    
-    70% {
-    
-    color: #2980b9;
-    }
-    80% {
-    
-    color: #f1c40f;
-    }
-    
-    90% {
-    
-    color: #2980b9;
-    }
-    
-    100% {
-    
-    color: pink;
-    }
-}
-
-
 h2 {
     font-size: 180%;
     word-spacing: 2px;
@@ -388,11 +331,6 @@ i {
     height: 200px;
 }
 
-.kgec {
-    color:#313131;
-    -webkit-animation:colorchange 10s infinite alternate;
-}
-
 .gallery {
     top: 0;
     height: 50vh;
@@ -423,16 +361,37 @@ i {
 /*                       Second set                       */
 /* ------------------------------------------------------ */
 
+.mid-bg {
+    background-image: url(/resources/css/img/mid-bg.png);
+    position: relative;
+    width: 100vw;
+    height: 700px;
+
+}
+
 .mid {
     position: relative;
-    width: 90vw;
+    width: 90%;
     right: 0;
-    margin-top: 50px;
     margin-left: auto;
-    height: 500px;
+    height: 70%;
     background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
     box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
     border-radius: 0.5rem 0px 0px 0.5rem;
+    opacity: 0.8;
+}
+
+.mid .col {
+    margin-top: 0;
+    height: 100%;
+    padding: 2rem;
+}
+
+.topic {
+    text-align: center;
+    font-weight: 400;
+    font-size: 110%;
+    margin: 15px auto;
 }
 
 /* ----------------------------------------------- */
