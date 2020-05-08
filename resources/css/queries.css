@@ -60,6 +60,10 @@
         margin: 0 0 8% 0;
     }    
 
+    .notice-box {
+        margin-top: 120px;
+    }
+
     .act {
         width: 90vw;
     }
