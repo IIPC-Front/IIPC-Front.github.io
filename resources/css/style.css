@@ -391,6 +391,7 @@ i {
     margin-top: 0;
     height: 100%;
     padding: 2rem;
+    height: auto;
 }
 
 .topic {
