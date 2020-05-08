@@ -21,7 +21,7 @@
     position: fixed;
     display: block;
     opacity: 1;
-    background-color: #161618;
+    background-color: #1f1d1f;
     z-index: 999;
     text-align: center;
   }
@@ -101,6 +101,21 @@ h2:after {
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+/* --- PARAGRAPHS --- */
+p {
+    line-height: 145%;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 /* ----- LINKS ----- */
@@ -318,7 +333,7 @@ i {
     background-color: #faf8f2;
     margin-top: 100px;
     position: relative;
-    height: 350px;
+    height: 500px;
 }
 
 .hero-text {
@@ -343,30 +358,22 @@ i {
     counter-increment: gallery-cell;
 }
 
-.tagline .gallery {
-    margin: 20px;
-    position: absolute;
-    padding: 0 20px;
-    height: 100%;
-}
-
-.tagline .gallery-cell {
-    margin:0 120px;
-    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
-}
-
-.flickity-page-dots { bottom: 30px; }
+.gallery-cell.is-u {
+    filter: blur(0);
+    transition-delay: 0.25s;
+  }
+  
+  
 
 /* ------------------------------------------------------ */
 /*                       Second set                       */
 /* ------------------------------------------------------ */
 
 .mid-bg {
-    background-image: url(/resources/css/img/mid-bg.png);
     position: relative;
+    background-image: url(/resources/css/img/mid-bg.png);
     width: 100vw;
-    height: 700px;
-
+    height: 800px;
 }
 
 .mid {
@@ -380,8 +387,7 @@ i {
     border-radius: 0.5rem 0px 0px 0.5rem;
     opacity: 0.8;
 }
-
-.mid .col {
+.mid .col, .mid2 col {
     margin-top: 0;
     height: 100%;
     padding: 2rem;
@@ -391,8 +397,56 @@ i {
     text-align: center;
     font-weight: 400;
     font-size: 110%;
-    margin: 15px auto;
 }
+
+p ion-icon {
+    margin: 7px 7px 0 0 ;
+    font-size: 18x;
+    float: left;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+    width: 350px ;
+    max-width: 100% ;
+    margin-left: auto ;
+    margin-right: auto ;
+ }
+
+ .face {
+    height: 100px;
+    padding: 0 20px;
+}
+
+button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.notice-box {
+    background-color: #fff;
+    height: max-content;
+    font-size: 14px;    
+    font-weight: 400;
+}
+
+.act {
+    margin-top: 50px;
+    position: relative;
+    width: 90%;
+    left: 0;
+    padding: 40px 60px;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+    opacity: 0.8;
+}
+
+
+
 
 /* ----------------------------------------------- */
 /*                      Animations                 */
