@@ -333,7 +333,7 @@ i {
     background-color: #faf8f2;
     margin-top: 100px;
     position: relative;
-    height: 500px;
+    height: 50vh;
 }
 
 .hero-text {
@@ -344,7 +344,7 @@ i {
 .tagline {
     position: relative;
     height: 200px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .gallery {
@@ -389,12 +389,13 @@ i {
     border-radius: 0.5rem 0px 0px 0.5rem;
     opacity: 0.8;
 }
-.mid .col, .mid2 col {
+.mid .col {
     margin-top: 0;
     height: 100%;
     padding: 2rem;
     height: auto;
 }
+
 
 .topic {
     text-align: center;
@@ -447,6 +448,9 @@ button {
     border-radius: 0.5rem 0px 0px 0.5rem;
     opacity: 0.8;
 }
+
+
+
 
 
 
