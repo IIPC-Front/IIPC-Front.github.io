@@ -374,6 +374,7 @@ i {
     background-image: url(https://raw.githubusercontent.com/IIPC-Front/website/master/resources/css/img/mid-bg.png);
     width: 100vw;
     height: 800px;
+    margin-top: 60px;
 }
 
 .mid {
@@ -435,7 +436,7 @@ button {
 }
 
 .act {
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative;
     width: 90%;
     left: 0;
