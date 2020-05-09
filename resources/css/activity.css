@@ -27,12 +27,52 @@ h2,h3{
 /* h3{
     font-size: 18px;
 } */
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
 .dropdown-menu{
     width: fit-content;
 }
 /* #navBarDropdown7{
     margin-right: auto;
 } */
+figure.hero {
+    position: relative;
+    height: 0;
+    padding-left: 0;
+    padding-bottom: 35%;
+    overflow: hidden;
+    margin: 0;
+}
+figure.hero img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+    transform: scale(1.03);
+}
+figure.hero figcaption{
+    position: absolute;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 50%;
+    color: white;
+    
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px 0;
+}
+figure.hero figcaption * {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
 
 /*-----------------------------------------------------*/
 /*-------------------Footer----------------------------*/
@@ -119,15 +159,29 @@ h2,h3{
     text-align: center;
     line-height: 75px;
     background: #000;
+    margin-bottom: auto;
 }
 /*-----------------------------------------------------*/
 /*-------------------Card----------------------------*/
 /*-----------------------------------------------------*/
-
+/* 
 .card-image{
     height: 260px;
     margin: 10px;
-}
+} */
 
 /* responsive css is due */
-/* @media only screen  */
+ @media only screen and (min-width: 768px) and (max-width: 991px){
+     .md-mb-30{
+         margin-bottom: 30px;
+     }
+ }
+
+ @media only screen and (max-width: 767px){
+     .sm-mb-30{
+         margin-bottom: 30px;
+     }
+     .footer{
+         padding: 50px 0;
+     }
+ }
