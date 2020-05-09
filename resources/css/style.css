@@ -45,6 +45,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     height: 100%;
+    min-height: 100%;
 }
 
 /* ----------------------------------------------- */
@@ -111,7 +112,9 @@ p {
     margin-left: 15%;
 }
 
-
+li {
+    list-style: none;
+}
 
 .box p {
     font-size: 90%;
@@ -133,6 +136,7 @@ a:visited {
 /* ------------------------------------------------------ */
 
 header {
+    border: 1px solid #000;
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -142,6 +146,7 @@ header {
 }
 
 .header-overlay {
+    border: 1px solid #000;
     position: absolute;
     width: calc(100vw - 150px);
     z-index: 1;
@@ -392,9 +397,10 @@ i {
 
 .mid-bg {
     position: relative;
-    background-image: url(https://raw.githubusercontent.com/IIPC-Front/website/master/resources/css/img/mid-bg.png);
+    display: inline-block;
+    background-image: url(/resources/css/img/mid-bg.png);
     width: 100vw;
-    height: 800px;
+    height: max-content;
     margin-top: 60px;
 }
 
@@ -403,7 +409,7 @@ i {
     width: 90%;
     right: 0;
     margin-left: auto;
-    height: 70%;
+    height:37%;
     background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
     box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
     border-radius: 0.5rem 0px 0px 0.5rem;
@@ -450,6 +456,10 @@ button {
     cursor: pointer;
 }
 
+.obj-box {
+    background-color: #fff;
+}
+
 .notice-box {
     background-color: #fff;
     height: max-content;
@@ -469,9 +479,39 @@ button {
     opacity: 0.8;
 }
 
+/* ------------------------------------------------------ */
+/*                         Footer                         */
+/* ------------------------------------------------------ */
 
+footer{
+    width: 100%;
+    border: 1px solid #000;
 
+    height: max-content;
+    margin-bottom: 0;
+    background: #111;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
 
+}
+
+footer ul li a{
+    color: #fff !important;
+}
+
+footer ion-icon {
+    color: #fff !important;
+    padding: 20px;
+}
+
+.footer-bottom-text, footer p {
+    margin: 1% 0 !important;
+}
+
+.submit-btn {
+    margin-left: 10px;
+}
 
 
 
