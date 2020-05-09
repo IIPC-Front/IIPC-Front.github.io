@@ -136,7 +136,6 @@ a:visited {
 /* ------------------------------------------------------ */
 
 header {
-    border: 1px solid #000;
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -146,7 +145,6 @@ header {
 }
 
 .header-overlay {
-    border: 1px solid #000;
     position: absolute;
     width: calc(100vw - 150px);
     z-index: 1;
@@ -258,8 +256,8 @@ nav {
 }
 .overlay a li {
     list-style: none;
-    font-size: 14px;
-    line-height: 5px;
+    font-size: 16px;
+    line-height: 10px;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -359,11 +357,6 @@ i {
     margin-top: 100px;
     position: relative;
     height: 50vh;
-}
-
-.hero-text {
-    padding: 30px;
-    text-align: center;
 }
 
 .tagline {
