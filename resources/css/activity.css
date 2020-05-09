@@ -49,7 +49,7 @@ h2,h3{
 } */
 .segment-two h2{
     color: azure;
-    font-family: Poppins;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
 
 }
@@ -75,7 +75,7 @@ h2,h3{
 }
 .segment-three h2{
     color: #fff;
-    font-family: Poppins;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
 }
 .segment-three h2:before{
@@ -98,7 +98,7 @@ h2,h3{
 }
 .segment-four h2{
     color: #fff;
-    font-family: Poppins;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
 }
 .segment-four h2:before{
