@@ -398,7 +398,7 @@ i {
 .mid-bg {
     position: relative;
     display: inline-block;
-    background-image: url(/resources/css/img/mid-bg.png);
+    background-image: url(https://raw.githubusercontent.com/IIPC-Front/website/master/resources/css/img/mid-bg.png);
     width: 100vw;
     height: max-content;
     margin-top: 60px;
