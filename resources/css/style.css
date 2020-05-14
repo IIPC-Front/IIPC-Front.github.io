@@ -21,7 +21,7 @@
     position: fixed;
     display: block;
     opacity: 1;
-    background-color: #161618;
+    background-color: #1f1d1f;
     z-index: 999;
     text-align: center;
   }
@@ -45,6 +45,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     height: 100%;
+    min-height: 100%;
 }
 
 /* ----------------------------------------------- */
@@ -101,6 +102,23 @@ h2:after {
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+/* --- PARAGRAPHS --- */
+p {
+    line-height: 145%;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+li {
+    list-style: none;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 /* ----- LINKS ----- */
@@ -210,33 +228,53 @@ nav {
 
 .overlay-content {
     position: relative;
-    top: 25%; 
-    width: 100%;
-    text-align: center; 
+    top: 10%; 
+    left: 10%;
+    width: 80%;
     margin-top: 30px; 
+    text-align: center;
 }
-  
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 18px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.lnk1 {
+    float: left;
+}
+
+.lnk2 {
+    float: right;
+}
+.lnk3 {
+    display: inline-block;
+}
+.overlay a li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 10px;
+}
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #ccc;
 }
 
 
 .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 25px;
     font-size: 60px;
+}
+
+.lnk-head {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    text-transform: capitalize;
 }
 
 
@@ -318,17 +356,13 @@ i {
     background-color: #faf8f2;
     margin-top: 100px;
     position: relative;
-    height: 350px;
-}
-
-.hero-text {
-    padding: 30px;
-    text-align: center;
+    height: 50vh;
 }
 
 .tagline {
     position: relative;
     height: 200px;
+    margin-top: 30px;
 }
 
 .gallery {
@@ -343,30 +377,24 @@ i {
     counter-increment: gallery-cell;
 }
 
-.tagline .gallery {
-    margin: 20px;
-    position: absolute;
-    padding: 0 20px;
-    height: 100%;
-}
-
-.tagline .gallery-cell {
-    margin:0 120px;
-    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
-}
-
-.flickity-page-dots { bottom: 30px; }
+.gallery-cell.is-u {
+    filter: blur(0);
+    transition-delay: 0.25s;
+  }
+  
+  
 
 /* ------------------------------------------------------ */
 /*                       Second set                       */
 /* ------------------------------------------------------ */
 
 .mid-bg {
-    background-image: url(/resources/css/img/mid-bg.png);
     position: relative;
+    display: inline-block;
+    background-image: url(https://raw.githubusercontent.com/IIPC-Front/website/master/resources/css/img/mid-bg.png);
     width: 100vw;
-    height: 700px;
-
+    height: max-content;
+    margin-top: 60px;
 }
 
 .mid {
@@ -374,25 +402,112 @@ i {
     width: 90%;
     right: 0;
     margin-left: auto;
-    height: 70%;
+    height:37%;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+    opacity: 0.8;
+}
+.mid .col {
+    margin-top: 0;
+    height: 100%;
+    padding: 2rem;
+    height: auto;
+}
+
+
+.topic {
+    text-align: center;
+    font-weight: 400;
+    font-size: 110%;
+}
+
+p ion-icon {
+    margin: 7px 7px 0 0 ;
+    font-size: 18x;
+    float: left;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+    width: 350px ;
+    max-width: 100% ;
+    margin-left: auto ;
+    margin-right: auto ;
+ }
+
+ .face {
+    height: 100px;
+    padding: 0 20px;
+}
+
+button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.obj-box {
+    background-color: #fff;
+}
+
+.notice-box {
+    background-color: #fff;
+    height: max-content;
+    font-size: 14px;    
+    font-weight: 400;
+}
+
+.act {
+    margin-top: 120px;
+    position: relative;
+    width: 90%;
+    left: 0;
+    padding: 40px 60px;
     background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
     box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
     border-radius: 0.5rem 0px 0px 0.5rem;
     opacity: 0.8;
 }
 
-.mid .col {
-    margin-top: 0;
-    height: 100%;
-    padding: 2rem;
+/* ------------------------------------------------------ */
+/*                         Footer                         */
+/* ------------------------------------------------------ */
+
+footer{
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 60px;
+    height: max-content;
+    margin-bottom: 0;
+    background: #111;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+
 }
 
-.topic {
-    text-align: center;
-    font-weight: 400;
-    font-size: 110%;
-    margin: 15px auto;
+footer ul li a{
+    color: #fff !important;
 }
+
+footer ion-icon {
+    color: #fff !important;
+    padding: 20px;
+}
+
+.footer-bottom-text, footer p {
+    margin: 1% 0 !important;
+}
+
+.submit-btn {
+    margin-left: 10px;
+}
+
+
+
 
 /* ----------------------------------------------- */
 /*                      Animations                 */
