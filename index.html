@@ -33,11 +33,11 @@
               <img src="resources/img/logo.jpg" alt="IIPC logo" class="logo">
                 <div class="head">Industry Institute Placement Cell, KGEC</div>
                 <ul class="main-nav">
-                    <li><a id="focusme" href="/">Home</a>
+                    <li><a id="focusme" href="">Home</a>
                         <ul class="dropdown">
-                            <a href=""><li>Objectives</li></a>
-                            <a href=""><li>Activities</li></a>
-                            <a href=""><li>Notice</li></a>
+                            <a href="#objectives"><li>Objectives</li></a>
+                            <a href="#activities"><li>Activities</li></a>
+                            <a href="#notice"><li>Notice</li></a>
                           </ul>	
                     </li>
                     <li>
@@ -161,7 +161,7 @@
         </div>      
       </div>
 
-      <div class="mid-bg">
+      <div id="objectives" class="mid-bg">
         <div class="mid">
           <div class="col span-2-of-3 obj-box">       
               <div class="topic">Objectives</div> <br>
@@ -179,7 +179,7 @@
 
           <div class="col span-1-of-3 notice-box">       
 
-            <div class="topic">Notice</div><br>
+            <div id="notice" class="topic">Notice</div><br>
             <p>
               <ion-icon name="checkbox-outline"></ion-icon> Single Line Notice Goes Here <button><ion-icon name="cloud-download-outline"></ion-icon></button><br><br>
               <ion-icon name="checkbox-outline"></ion-icon> Single Line Notice Goes Here <button><ion-icon name="cloud-download-outline"></ion-icon></button><br><br>
@@ -196,7 +196,7 @@
 
         </div>
           <div class="col span-3-of-3 act">       
-              <div class="topic">Activities</div> <br>
+              <div id="activities" class="topic">Activities</div> <br>
               <div class="gallery js-flickity col span-1-of-3"
         data-flickity-options='{ 
             "wrapAround": true, 
@@ -271,6 +271,7 @@
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="vendors/js/flickity.pkgd.min.js"></script>
+    <script src="vendors/js/jquery.smooth-scroll.js"></script>
     <script src="resources/js/script.js"></script>
     <script>
       $(window).load(function() {

@@ -1,39 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-    <head>
+<head>
+   
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Industry Institute Partnership Cell, Kalyani Government Engineering College">
 
-        <link rel="stylesheet" type="text/css" href="../../vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../../vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="../../vendors/css/animate.css">
-
+     
+       
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/queries.css">
         
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css">
 
-        <title>IIPC KGEC - Home</title>
+		<title>INHOUSE</title>
+  </head>
+                    
 
-    </head>
 
-    <body>
-        <header>
+ <!-----------
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+ --------->
+		<style>
+ 
+body{  
+
+
+
+
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    
+}
+        body { background-image: url(ur.jpg);}
+        h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
+   
+            .hi-slide { position: relative; width: 754px; height: 292px; margin: 115px auto 0; }
+            
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            { position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;     
+                border-radius: 50px; 
+                 
+                
+              line-height: 40px;
+              text-align: center; 
+              cursor: pointer;
+              background-color: #fff; 
+              color: black;               
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+           .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover 
+            {
+            opacity: 1; 
+            background-color: #fff;  
+            }
+            
+           .hi-slide .hi-prev { left: -60px; }
+            
+    .hi-slide .hi-prev::before { content: '<'; }
+    .hi-slide .hi-next { right: -60px; }
+    .hi-slide .hi-next::before { content: '>'; }
+    
+            .hi-slide > ul
+                    { 
+                        list-style: none; 
+                        position: relative;
+                        width: 754px; 
+                        height: 292px; 
+                        margin: 0;
+                        padding: 0;
+            }
+            
+            
+        .hi-slide > ul > li {
+            overflow: hidden; 
+            position: absolute; 
+            z-index: 0; 
+            left: 377px;
+            top: 146px; 
+            width: 0; 
+            height: 0; 
+            margin: 0; 
+            padding: 0;
+            border: 3px solid #fff;              
+            background-color: #333; 
+            cursor: pointer; }
+            
+        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+
+ 
+
+		</style>
+	</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<body>
+
+ 
+<header>
           
             <nav>
               <img src="../img/logo.jpg" alt="IIPC logo" class="logo">
                 <div class="head">Industry Institute Placement Cell, KGEC</div>
                 <ul class="main-nav">
-                    <li><a href="">Home</a>
+                    <li><a id="focusme" href="/">Home</a>
                         <ul class="dropdown">
-                            <a href="#objectives"><li>Objectives</li></a>
-                            <a href="#activities"><li>Activities</li></a>
-                            <a href="#notice"><li>Notice</li></a>
-                          </ul>	
+                            <a href=""><li>Objectives</li></a>
+                            <a href=""><li>Activities</li></a>
+                            <a href=""><li>Notice</li></a>
+                          </ul> 
                     </li>
                     <li>
                       <a href="resources/pages/team.html">Team</a>
@@ -41,24 +138,24 @@
                         <a href="resources/pages/team.html/#faculty"><li>Faculty</li></a>
                         <a href="resources/pages/team.html/#student"><li>Student</li></a>
                         <a href="resources/pages/team.html/#advisory-board"><li>Advisory Board</li></a>
-                      </ul>			
+                      </ul>     
                     </li>
                     <li>
-                        <a id="focusme" href="resources/pages/activity.html">Activity</a>
+                        <a href="resources/pages/activity.html">Activity</a>
                         <ul class="dropdown">
                           <a href=""><li>Internship</li></a>
                           <a href=""><li>Seminar</li></a>
                           <a href=""><li>Workshop</li></a>
                           <a href=""><li>Guest Lecture</li></a>
                           <a href=""><li>Orientation Program</li></a>
-                        </ul>			
+                        </ul>     
                       </li>
                       <li>
-                        <a href="#">MOU</a>
+                        <a href="resources/pages/mou.html">MOU</a>
                         <ul class="dropdown">
-                          <a href="resources/pages/mou_academic.html"><li>Academics</li></a>
-                          <a href="resources/pages/mou_industry.html"><li>Industry</li></a>
-                        </ul>			
+                          <a href=""><li>Academics</li></a>
+                          <a href=""><li>Industry</li></a>
+                        </ul>     
                       </li>
                       <li>
                         <a href="resources/pages/industrial-visits.html">Industrial Visit</a>
@@ -67,7 +164,7 @@
                           <a href=""><li>Inplant</li></a>
                           <a href=""><li>Certification Program</li></a>
                           <a href=""><li>Industrial Programme</li></a>
-                        </ul>			
+                        </ul>     
                       </li>
                        <li><a href="resources/pages/downloads.html">Downloads</a></li>
                     </ul>
@@ -85,20 +182,20 @@
                           <a href=""><li>Objectives</li></a>
                           <a href=""><li>Activities</li></a>
                           <a href=""><li>Notice</li></a>
-                        </ul>	<br>
+                        </ul> <br>
                         <a class="lnk-head" href="resources/pages/team.html">TEAM</a><br>
                         <ul class="mob-dropdown">
                           <a href="resources/pages/team.html/#faculty"><li>Faculty</li></a>
                           <a href="resources/pages/team.html/#student"><li>Student</li></a>
                           <a href="resources/pages/team.html/#advisory-board"><li>Advisory Board</li></a>
-                        </ul>			
+                        </ul>     
                       </div>
                       <div class="lnk2">
                         <a class="lnk-head" href="resources/pages/mou.html">MOU</a><br>
                         <ul class="mob-dropdown">
                           <a href=""><li>Academics</li></a>
                           <a href=""><li>Industry</li></a>
-                        </ul>			<br>
+                        </ul>     <br>
                         <a class="lnk-head" href="resources/pages/activity.html">ACTIVITY</a><br>
                         <ul class="mob-dropdown">
                           <a href=""><li>Internship</li></a>
@@ -106,16 +203,17 @@
                           <a href=""><li>Workshop</li></a>
                           <a href=""><li>Guest Lecture</li></a>
                           <a href=""><li>Orientation Program</li></a>
-                        </ul>	<br>
+                        </ul> <br>
                       </div>
-                      <div class="lnk3">                     
+                      <div class="lnk3">     
+                        <br>                
                         <a class="lnk-head" href="resources/pages/industrial-visits.html">INDUSTRIAL VISIT</a><br>
                         <ul class="mob-dropdown">
                           <a href=""><li>Inhouse</li></a>
                           <a href=""><li>Inplant</li></a>
                           <a href=""><li>Certification Program</li></a>
                           <a href=""><li>Industrial Programme</li></a>
-                        </ul>		<br>
+                        </ul>   <br>
                         <a class="lnk-head" href="resources/pages/downloads.html">DOWNLOADS</a> 
                       </div>
                     </div>
@@ -131,40 +229,48 @@
 
             </nav>                        
         </header>
-        <div class="header-overlay">Industry Institute<br>Placement Cell - KGEC</div>
 
-        <div class="banner">
-            <h2>IIPC Activities</h2>
-        </div>
 
-        <div class="row">
-          <div class="col span-4-of-4 activity-card pdf-holder">
-            <div class="pdf">Activity.pdf</div><a class="download-btn" href="#link-to-pdf">📥 Download</a>
-          </div>
-        </div>
-        <h2>Gallery</h2>
-        <div class="row activity-cards">
-            <div class="col span-1-of-3 activity-card">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                </div>
-            <div class="col span-1-of-3 activity-card">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-            </div>
-            <div class="col span-1-of-3 activity-card">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-                <img src="/resources/img/img1.jpg" alt="">
-            </div>
-        </div>
+ <br><br>
 
-      <footer>
+ <h2><br>Hey there! I'm Naruto</h2>
+		<div class="slide hi-slide">
+		  <div class="hi-prev "></div>
+			<div class="hi-next "></div>
+			<ul>
+
+
+
+        <li><img src="../img/img1.jpg"></li>
+        <li><img src="../img/img2.jpg"></li> 
+        <li><img src="../img/img3.jpg"></li>
+         <li><img src="../img/img4.jpg"></li>
+          <li><img src="../img/img1.jpg"></li>
+           <li><img src="../img/img2.jpg"></li>
+            <li><img src="../img/img3.jpg"></li>
+             <li><img src="../img/img4.jpg"></li>
+              <li><img src="../img/img3.jpg"></li>
+              <li><img src="../img/img2.jpg"></li>
+
+			</ul>
+		</div>
+		
+		
+		
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+
+
+
+
+
+
+
+
+ <footer>
           <div class="container-bsp">
             <div class="row">
                 <div class="col span-1-of-3">
@@ -200,10 +306,23 @@
         </div><br>
         <p class="footer-bottom-text col span-3-of-3">All rights reserved by &copy;IIPC-KGEC</p>
     </footer>
+
         
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
-  </body>
+    <script src="vendors/js/flickity.pkgd.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script>
+      $(window).load(function() {
+        
+          $('#loading').hide();
+        
+      });
 
+
+
+
+
+	</body>
+    
 </html>

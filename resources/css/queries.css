@@ -43,6 +43,10 @@
         margin-top: 60px;
     }
 
+    .activity-cards {
+        height: max-content;
+    }
+
 }
 
 /* Small phones to small tablets: from 481px to 767px */
