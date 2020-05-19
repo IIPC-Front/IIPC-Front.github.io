@@ -120,6 +120,7 @@ p {
     width: 70%;
     height: auto;
     margin-left: 15%;
+font-weight: 400;
 }
 
 li {
@@ -378,7 +379,7 @@ i {
 .gallery {
     top: 0;
     height: 50vh;
-}
+ }
 
 .gallery-cell {
     height: 100%;
@@ -512,10 +513,19 @@ footer ion-icon {
     margin: 1% 0 !important;
 }
 
-.submit-btn {
-    margin-left: 10px;
+.submit {
+    padding-bottom: 5px;
+    height: 30px;
 }
 
+.submit-btn {
+    margin-left: 10px;
+    border-color: #c65039;
+    background-color: #c65039;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+}
 
 
 
@@ -556,20 +566,22 @@ footer ion-icon {
     height: auto;
 }
 
-.activity-cards {
-    margin-top: 40px;
-    height: 50vh;
-    overflow-y: scroll;
+
+.activity-card .pdf {
+    font-weight: 400;
+    width: 100%;
+    padding: 30px 0;
+    color: #3379b7;
 }
 
 .pdf-holder {
     padding: 30px;
 }
 
-.activity-card .pdf {
-    font-weight: 400;
-    width: 100%;
-    padding: 30px 0;
+.activity-cards {
+    margin-top: 40px;
+    height: 50vh;
+    overflow-y: scroll;
 }
 
 .activity-card img{
@@ -593,4 +605,23 @@ footer ion-icon {
 
 .download-btn:hover {
     transform: scale(0.96);
+}
+
+/* ------------------------------------------------------ */
+/*                    Industrial Visits                   */
+/* ------------------------------------------------------ */
+
+.visit {
+    height: 50vh;
+    width: 90vw !important;
+    max-width: none;
+}
+
+.visit .col {
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.year-holder {
+    padding: 20px 0;
 }

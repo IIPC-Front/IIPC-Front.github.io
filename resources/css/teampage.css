@@ -1,21 +1,13 @@
 body{
-  background-color: rgba(243, 141, 141, 0.226) !important;
+  background-color: #faf8f2 !important;
+  font-family: Lato, sans-serif, serif !important;
 }
 
 .member1{
     margin-top: 5%;
-    width: 100%;
-    
+    width: 100%;    
 }
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: rgb(3, 3, 1) !important;
-}
-h3{
-  text-align: center;
-  color: rgb(3, 3, 1) !important;
-}
+
 .member{
     margin-top: 3%;
     width: 100%;
@@ -23,8 +15,7 @@ h3{
 }
 .heri1{
    
-    width: 35%;
-    
+    width: 35%;  
     
     margin-left: auto;
   margin-right: auto;   

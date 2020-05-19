@@ -1,17 +1,31 @@
 body{
-    background-color: rgba(243, 141, 141, 0.226) !important;
+  background-color: #faf8f2 !important;
+  font-family: Lato, sans-serif, serif !important;
 }
 
-h1{
-    text-align: center;
-    color: rgb(3, 3, 1);
-}
-h3{
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
   text-align: center;
-    font-size: 120% !important;
-    padding: 5%;
-    color: rgb(3, 3, 1) !important;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #337ab7;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .member{
     margin-top: 3%;
     width: 100%;
