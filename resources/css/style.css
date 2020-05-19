@@ -249,7 +249,8 @@ nav {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -257,18 +258,22 @@ nav {
 
 .lnk1 {
     float: left;
+    text-align: left;
 }
 
 .lnk2 {
     float: right;
+    text-align: left;
 }
 .lnk3 {
     display: inline-block;
+    text-align: left;
 }
 .overlay a li {
     list-style: none;
     font-size: 16px;
-    line-height: 10px;
+    line-height: 8px;
+    font-weight: 400;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -284,10 +289,27 @@ nav {
 }
 
 .lnk-head {
-    border-bottom: 1px solid rgb(182, 182, 182);
     text-transform: capitalize;
+    width: max-content;
 }
 
+.lnk-head2 {
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    font-size: 90% !important;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+}
+
+
+.encap  {
+    width: 80vw;
+}
+
+.toright {
+    float: right;
+}
 
 @media screen and (max-height: 450px) {
 .overlay a {font-size: 20px}
@@ -620,6 +642,7 @@ footer ion-icon {
 .visit .col {
     height: 100%;
     border: 1px solid #000;
+    min-height: 400px;
 }
 
 .year-holder {

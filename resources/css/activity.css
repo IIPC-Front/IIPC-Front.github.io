@@ -81,9 +81,41 @@ h4, h5{
 .dropdown-menu{
     width: fit-content;
 }
-/* #navBarDropdown7{
-    margin-right: auto;
-} */
+
+.navbar {
+    height: 86px;
+    padding-left: 0 !important;
+}
+
+.navbar-brand img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 12px;
+    padding: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.navbar-brand h4 {
+    font-size: 20px;
+    float: left;
+    height: max-content;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 100%;
+    color: #f4ffff;
+}
+
+@media only screen and (max-width: 1080px) {
+    .navbar {
+        height: auto;
+    }
+    .navbar-brand h4{
+        display: none;
+    }
+}
+
 figure.hero {
     position: relative;
     height: 0;
