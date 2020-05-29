@@ -43,6 +43,14 @@
         margin-top: 60px;
     }
 
+    .activity-cards {
+        height: max-content;
+    }
+
+    .visit {
+        width: 100vw !important;
+    }
+
 }
 
 /* Small phones to small tablets: from 481px to 767px */
