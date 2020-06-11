@@ -9,6 +9,23 @@
     --light-gray: lightgray;
 } */
 
+* {
+    font-family: Lato, sans-serif !important;
+}
+
+a, a:link, a:hover, a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+h5 {
+    font-family: Lato, sans-serif !important;
+}
+
+.head {
+    font-weight: 100;
+}
+
 .favicon{
     border-radius: 50%;
     resize: both;
@@ -21,12 +38,42 @@ p{
     color: #999;
     line-height: 25px;
 }
-h2,h3{
-    color: #fff;
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
-/* h3{
-    font-size: 18px;
-} */
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #337ab7;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+footer h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c65039;;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h4, h5{
+    font-weight: 100 !important;
+}
 
 .dropdown:hover>.dropdown-menu{
     display: block;
@@ -34,9 +81,41 @@ h2,h3{
 .dropdown-menu{
     width: fit-content;
 }
-/* #navBarDropdown7{
-    margin-right: auto;
-} */
+
+.navbar {
+    height: 86px;
+    padding-left: 0 !important;
+}
+
+.navbar-brand img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 12px;
+    padding: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.navbar-brand h4 {
+    font-size: 20px;
+    float: left;
+    height: max-content;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 100%;
+    color: #f4ffff;
+}
+
+@media only screen and (max-width: 1080px) {
+    .navbar {
+        height: auto;
+    }
+    .navbar-brand h4{
+        display: none;
+    }
+}
+
 figure.hero {
     position: relative;
     height: 0;
@@ -93,13 +172,7 @@ figure.hero figcaption * {
     text-transform: uppercase;
 
 }
-/* Arial, "Helvetica Neue", Helvetica, sans-serif; */
-.segment-two h2:before{
-    content: '|';
-    color: #c65039;
-    padding-right: 10px;
 
-}
 .segment-two ul{
     margin: 0;
     padding :0;
@@ -118,12 +191,7 @@ figure.hero figcaption * {
     font-family: Lato, sans-serif;
     text-transform: uppercase;
 }
-.segment-three h2:before{
-    content: '|';
-    color: #c65039;
-    padding-right: 10px;
 
-}
 .segment-three a{
     background: #494848;
     width: 40px;
@@ -141,12 +209,7 @@ figure.hero figcaption * {
     font-family: Lato, sans-serif;
     text-transform: uppercase;
 }
-.segment-four h2:before{
-    content: '|';
-    color: #c65039;
-    padding-right: 10px;
 
-}
 .segment-four form input[type=submit]{
     background: #c65039;
     border: none;
@@ -161,6 +224,64 @@ figure.hero figcaption * {
     background: #000;
     margin-bottom: auto;
 }
+
+/* ------------------------------------------------------ */
+/*                           MOU                          */
+/* ------------------------------------------------------ */
+
+.my-5 h4 {
+    font-size: 22px;
+    font-weight: 400 !important;
+}
+
+.list-group-item-text {
+    font-size: 18px;
+    color: #000;
+}
+
+.my-5 p {
+    float: left;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    color: #fff !important;
+    background-color: #337ab7;
+    border-radius: 0.25rem;
+    font-size: 12px;
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+}
+
+.download-btn:hover {
+    transform: scale(0.96);
+}
+
+.download-btn {
+    float: right;
+}
+
+.list-group {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.list-group-item:nth-child(1) {
+    background-color: rgba(214, 93, 72, 0.705);
+}
+
+.list-group-item:nth-child(1) p {
+    color: #fff;
+}
+
+.list-group-item:nth-child(1) a {
+    color: rgb(60, 89, 214);
+}
+
 /*-----------------------------------------------------*/
 /*-------------------Card----------------------------*/
 /*-----------------------------------------------------*/
