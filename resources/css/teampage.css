@@ -45,7 +45,7 @@ body{
   transition: .3s ease;
   background-color: rgba(255, 0, 0, 0.295);
 }
-.overlay {
+.overlayx {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -62,15 +62,15 @@ body{
     opacity: 1;
     transform: rotateY(360deg);
   }
-.imgwid2:hover  .overlay {
+.imgwid2:hover  .overlayx {
 opacity: 1;
 transform: rotateY(360deg);
 }
-.imgwid3:hover  .overlay {
+.imgwid3:hover  .overlayx {
     opacity: 1;
     transform: rotateY(360deg);
 }
-  .icon {
+  .icon0 {
     color: white;
     font-size: 200%;
     position: absolute;
@@ -112,6 +112,7 @@ transform: rotateY(360deg);
     text-align: center;
     
   }
+  
   .fa-facebook {
     
     padding:10%;
@@ -189,10 +190,16 @@ transform: rotateY(360deg);
     height: 400px;
 }
 .heading3{
-  font-size: 2vw;
+  font-size: 1.5vw;
+  font-weight:bold;
 }
-
+.contains{
+  margin-top: 6vw;
+}
 @media only screen and (max-width: 768px){
+  .contains{
+    margin-top: 12vw;
+  }
   .heading3{
     font-size: 4vw;
   }
@@ -212,6 +219,10 @@ transform: rotateY(360deg);
         display: block;
         
         
+    }
+    .member1{
+      padding-top: 2vw;
+      margin-top: 10vw;
     }
 
     .imgwid2{
