@@ -12,6 +12,10 @@
 
 /* Remove second carousel */
 @media only screen and (max-width: 1118px) {
+
+    html, body {
+        display: block;
+    }
 .main-nav { display: none; }
 
     .icon {
