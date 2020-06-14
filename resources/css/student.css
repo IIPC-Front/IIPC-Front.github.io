@@ -1,6 +1,8 @@
-body{
+html, body{
   background-color: #faf8f2 !important;
   font-family: Lato, sans-serif, serif !important;
+  height: 100%;
+  width: 100%;
 }
 
 h2 {
