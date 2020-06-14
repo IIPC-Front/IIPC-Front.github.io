@@ -561,18 +561,8 @@ footer ion-icon {
     margin: 1% 0 !important;
 }
 
-.submit {
-    padding-bottom: 5px;
-    height: 30px;
-}
-
-.submit-btn {
-    margin-left: 10px;
-    border-color: #c65039;
-    background-color: #c65039;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px;
+.socials {
+    font-size: 24px;
 }
 
 
