@@ -236,7 +236,6 @@ nav {
     z-index: 4; 
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.9); 
     overflow-x: hidden; 
     transition: 0.5s;
@@ -275,7 +274,7 @@ nav {
     text-align: left;
 }
 .overlay a li {
-    list-style: none;
+    list-style: circle;
     font-size: 16px;
     line-height: 8px;
     font-weight: 400;
@@ -284,7 +283,6 @@ nav {
 .overlay a:hover, .overlay a:focus {
     color: #ccc;
 }
-
 
 .overlay .closebtn {
     position: absolute;
@@ -296,6 +294,7 @@ nav {
 .lnk-head {
     text-transform: capitalize;
     width: max-content;
+    color: rgb(200, 200, 200) !important;
 }
 
 .lnk-head2 {
@@ -304,9 +303,8 @@ nav {
     float: left;
     font-size: 90% !important;
     text-transform: capitalize;
-    border-bottom: 1px solid #fff;
+    
 }
-
 
 .encap  {
     width: 80vw;
@@ -585,7 +583,7 @@ footer ion-icon {
 /* ----------------------------------------------- */
 
 .banner {
-    margin-top: 78px;
+    margin-top: 86px;
     display: flex;
     height: 30vh;
     width: 100vw !important;
@@ -676,4 +674,45 @@ footer ion-icon {
 
 .year-holder {
     padding: 20px 0;
+}
+
+/* ------------------------------------------------------ */
+/*                    MOU and DOWNLOADS                   */
+/* ------------------------------------------------------ */
+
+.mou {
+    margin-top: 50px;
+    width: 1140px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.mou-list {
+    max-height: 700px;
+    overflow-y: scroll;
+    padding: 20px;
+    width: 100%;
+}
+
+.mou-list ul li {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    padding: 20px 40px;
+    width: 100%;    
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #fffffe;
+}
+.mou-list ul li .text {
+    max-width: 50%;
+    word-wrap: break-word;
+    color: #535353;
+}
+
+.sub-text {
+    font-size: 16px;
+    font-style: oblique;
+    color: #6f6f6f;
 }
