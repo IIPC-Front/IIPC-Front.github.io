@@ -154,7 +154,7 @@ header {
     margin: 0;
     height: 86px;
     background-color: #343a40;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
