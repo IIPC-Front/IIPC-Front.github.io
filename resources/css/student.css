@@ -32,24 +32,24 @@ h2:after {
     
 }
 
-.overlay {
+.overlayx {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 72%;
+    height: 70%;
     width: 100%;
     opacity: 0;
     transition: .3s ease;
     background-color: rgba(255, 0, 0, 0.295);
   }
 
-.imgwid3:hover .overlay {
+.imgwid3:hover .overlayx {
     opacity: 1;
     transform: rotateY(360deg);
 }
-  .icon {
+  .icon0 {
     color: white;
     font-size: 200%;
     position: absolute;
@@ -145,8 +145,26 @@ h2:after {
     border-radius: 5%;
     height: 300px;
 }
-
+.heading3{
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+.contains{
+  margin-top: 10vw;
+}
+.imgwid3 p{
+  font-size: 1vw;
+}
 @media only screen and (max-width: 768px){
+  .contains{
+    margin-top:30vw;
+  }
+  .imgwid3 p{
+    font-size: 4vw;
+  }
+  .heading3{
+    font-size: 5vw;
+  }
     .top2{
         height: 300px;
     }
