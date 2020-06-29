@@ -150,18 +150,17 @@ a:visited {
 
 header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
     margin: 0;
     height: 86px;
     background-color: #343a40;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .header-overlay {
     position: fixed;
-    width: calc(100vw - 150px);
+    width: calc(100% - 150px);
     z-index: 1;
     margin: 0 75px;
     height: 86px;
