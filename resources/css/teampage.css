@@ -196,6 +196,8 @@ transform: rotateY(360deg);
 }
 .contains{
   margin-top: 6vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 768px){
   .contains{
