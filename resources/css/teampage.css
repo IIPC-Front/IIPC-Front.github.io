@@ -2,6 +2,7 @@ body{
   background-color: #faf8f2 !important;
   width: 100% !important;
   font-family: Lato, sans-serif, serif !important;
+  overflow-x: hidden !important;
 }
 
 .member1{
