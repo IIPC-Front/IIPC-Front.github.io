@@ -578,7 +578,7 @@ footer ion-icon {
     margin-top: 86px;
     display: flex;
     height: 30vh;
-    width: 100vw !important;
+    width: 100% !important;
     align-items: center;
     justify-content: center;
     text-align: center;
