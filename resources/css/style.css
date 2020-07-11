@@ -439,8 +439,6 @@ i {
     right: 0;
     margin-left: auto;
     height:max-content;
-    background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
-    box-shadow: rgba(0, 0, 0, 0.05) 1.25rem 1.25rem 2.5rem 0px;
     border-radius: 0.5rem 0px 0px 0.5rem;
     opacity: 0.8;
     overflow: hidden;
@@ -451,6 +449,7 @@ i {
     padding: 2rem;
     height: auto;
     overflow-x: hidden;
+    margin-bottom: 0;
 }
 
 
